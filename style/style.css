@@ -1,0 +1,661 @@
+@import "fonts.css";
+
+body {
+  margin: 0;
+  background: #e3f1fb;
+  font-family: "Orkney";
+  overflow: hidden;
+}
+
+/*esconder scrollbar*/
+.outer-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  height: 630px;
+  position: relative;
+  top: calc(100vh - 630px);
+  z-index: -3;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+#outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+#lancet {
+  position: absolute;
+  left: 20%;
+  top: 77%;
+  height: auto;
+  width: 148px;
+  z-index: 1;
+  padding-bottom: 15%;
+  background-size: 100% !important;
+  background-repeat: no-repeat;
+}
+
+.link {
+  color: #339966;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 8%;
+  /*text-align: left;*/
+}
+
+.link:hover {
+  color: #207b74;
+}
+
+/*Estilização relacionado aos popups*/
+
+.dialogo {
+  display: flex !important;
+  align-items: center;
+}
+
+.di-rodney{
+  justify-content: space-around;
+}
+
+.dialogo-img {
+  width: auto;
+  height: 100px;
+  padding-right: 10%;
+  padding-left: 12%;
+  padding-bottom: 2%;
+}
+
+.manu-txt{
+  width: 50%;
+}
+
+.manu-img{
+  padding-left: 17%;
+  padding-right: 0;
+}
+
+
+#intro-content{
+  display: none;
+  justify-content: space-around;
+  align-items: center !important;
+}
+
+#lucas-intro{
+  width: 150px;
+  height: 150px;
+}
+
+#div-button{
+  height: 35px;
+  width: 70px;
+  background: #207b74;
+  border-radius: 5px;
+  position: relative;
+  left: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-button{
+  text-decoration: none;
+  color: white;
+}
+
+
+/*BALÕES DE INTERAÇÃO*/
+.balao-luiziane{
+    position: absolute;
+    left: 1263px;
+    top: calc(100vh - 217px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+
+.balao-rodiney{
+    position: absolute;
+    left: 1745px;
+    top: calc(100vh - 240px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+
+.balao-glaucyanyh{
+    position: absolute;
+    left: 2025px;
+    top: calc(100vh - 215px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+
+.balao-ciclista{
+    position: absolute;
+    left: 10727px;
+    top: calc(100vh - 195px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+
+.balao-manu{
+    position: absolute;
+    left: -227px;
+    top: calc(100vh - 281px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+/*PERSONAGENS SESSAO 1*/
+
+.luiziane{
+    position: absolute;
+    left: 1305px;
+    top: calc(100vh - 165px);
+    height: 104px;
+    width: 59px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.laerte{
+    position: absolute;
+    left: 1677px;
+    top: calc(100vh - 179px);
+    height: 629px;
+    width: 41px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.rodiney{
+    position: absolute;
+    left: 1794px;
+    top: calc(100vh - 183px);
+    height: 102px;
+    width: 37px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.glaucyanyh{
+    position: absolute;
+    left: 2086px;
+    top: calc(100vh - 165px);
+    height: 104px;
+    width: 40px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.manu{
+    position: absolute;
+    left: -168px;
+    top: calc(101vh - 232px);
+    width: auto;
+    height: 84px;
+
+}
+.ciclistas{
+    position: absolute;
+    left: 10739px;
+    top: calc(100vh - 165px);
+    height: 150px;
+    width: auto;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.plateia{
+    position: absolute;
+    left: 9010px;
+    top: calc(100vh - 160px);
+    height: 73px;
+    width: auto;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.menino{
+    width: 38px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 153px);
+    left: 5765px;
+
+}
+/*ELEMENTOS DO CENARIO*/
+
+.passaro {
+    position: absolute;
+    height: 67px;
+    left: 1698px;
+    top: calc(100vh - 116px);
+    background-size: 100% !important;
+    width: 45px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.passarin {
+    position: absolute;
+    height: 67px;
+    left: 1656px;
+    top: calc(100vh - 116px);
+    background-size: 100% !important;
+    width: 45px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.retorno{
+    position: absolute;
+    height: 41px;
+    left: 50px;
+    top: 50px;
+    background-size: 100% !important;
+    width: 25px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/*MODAL INTERATIVO SESSAO1*/
+
+.s2 {
+    position: absolute;
+    left: 1302px;
+    top: calc(100vh - 169px);
+    height: 106px;
+    float: right;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    width: 60px;
+    z-index: 1;
+}
+
+/*PLACAS IMPORTANTE LEMBRAR*/
+
+.importante1{
+    width: 300px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 256px);
+    left: 2785px;
+
+}
+.importante2{
+    width: 300px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 294px);
+    left: 5332px;
+
+}
+
+
+/*OUTDOORS1*/
+.outdoor11 {
+    position: absolute;
+    left: -3262px;
+    top: calc(100vh - 471px);
+    width: auto;
+    height: 426px;
+}
+
+
+
+
+/*TEXTOS SERRILHADOS*/
+.texto1{
+    position: absolute;
+    height: 409px;
+    left: -2379px;
+    top: calc(100vh - 531px);
+    width: 390px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.texto2 {
+    position: absolute;
+    height: 413px;
+    left: -1912px;
+    top: calc(100vh - 531px);
+    width: 390px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.texto3 {
+    position: absolute;
+    height: 413px;
+    left: -1467px;
+    top: calc(100vh - 531px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.texto4 {
+    position: absolute;
+    height: 409px;
+    left: -1038px;
+    top: calc(100vh - 531px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+
+
+
+/*OUTDOORS2*/
+.outdoor21 {
+    position: absolute;
+    left: -651px;
+    top: calc(100vh - 471px);
+    width: auto;
+    height: 426px;
+}
+
+/*HOLOGRAMAS*/
+.holograma1 {
+    position: absolute;
+    left: -2406px;
+    top: calc(100vh - 605px);
+    width: auto;
+    height: 499px;
+}
+.holograma2 {
+    position: absolute;
+    left: -1590px;
+    top: calc(100vh - 605px);
+    width: auto;
+    height: 502px;
+}
+.holograma3 {
+    position: absolute;
+    left: -1169px;
+    top: calc(100vh - 605px);
+    width: auto;
+    height: 499px;
+}
+
+/*METEORO*/
+.meteoro{
+    position: absolute;
+    left: -400px;
+    top: calc(100vh - 491px);
+    width: auto;
+    height: 452px;
+
+}
+
+/*PALCO*/
+.palco{
+    position: absolute;
+    left: -224px;
+    top: calc(100vh - 339px);
+    width: auto;
+    height: 253px;
+
+}
+
+
+.show {
+  z-index: 9999;
+  position: absolute;
+  right: 0;
+  top: 77%;
+  width: 0.6%;
+  height: 0;
+  padding-bottom: 0.64%;
+  float: right;
+  background-color: transparent;
+  border-color: black;
+  border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+/*ANIMAÇÕES*/
+.anime-outdoor1 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-texto1 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-texto2 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-texto3 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-texto4 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-outdoor2 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-holograma1{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-holograma2 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-holograma3 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-meteoro{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-palco{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-manu{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-start {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+
+}
+
+
+/* MOVIMENTAÇÃO DAS NUVENS */
+
+.nuvem1 {
+  animation: posicionamento-1 4s infinite;
+  top: 30px;
+}
+
+.nuvem2 {
+  animation: posicionamento-2 4s infinite;
+  top: 80px;
+}
+
+.nuvem3 {
+  animation: posicionamento-3 3s infinite;
+  top: 10px;
+}
+
+.nuvem4 {
+  animation: posicionamento-4 3s infinite;
+  top: 60px;
+}
+
+.nuvem5 {
+  animation: posicionamento-5 3s infinite;
+  top: 40px;
+}
+
+.nuvem6 {
+  animation: posicionamento-6 3s infinite;
+  top: 40px;
+}
+
+.nuvem7 {
+  animation: posicionamento-7 3s infinite;
+  top: 40px;
+}
+
+.nuvem8 {
+  animation: posicionamento-8 3s infinite;
+  top: 40px;
+}
+
+.nuvens {
+  animation-timing-function: linear;
+  position: absolute;
+  animation-direction: alternate-reverse;
+  width: 180px;
+  z-index: -2;
+}
+
+@keyframes posicionamento-1 {
+  to {
+    left: 2900px;
+  }
+  from {
+    left: 2960px;
+  }
+}
+
+@keyframes posicionamento-2 {
+  to {
+    left: 3160px;
+  }
+  from {
+    left: 3060px;
+  }
+}
+
+@keyframes posicionamento-3 {
+  to {
+    left: 4000px;
+  }
+  from {
+    left: 4060px;
+  }
+}
+
+@keyframes posicionamento-4 {
+  to {
+    left: 5000px;
+  }
+  from {
+    left: 5060px;
+  }
+}
+
+@keyframes posicionamento-5 {
+  to {
+    left: 6000px;
+  }
+  from {
+    left: 6060px;
+  }
+}
+
+@keyframes posicionamento-6 {
+  to {
+    left: 7500px;
+  }
+  from {
+    left: 7560px;
+  }
+}
+
+@keyframes posicionamento-7 {
+  to {
+    left: 8200px;
+  }
+  from {
+    left: 8260px;
+  }
+}
+
+@keyframes posicionamento-8 {
+  to {
+    left: 10500px;
+  }
+  from {
+    left: 10560px;
+  }
+}
