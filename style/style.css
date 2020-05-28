@@ -404,34 +404,24 @@ body {
 /*HOLOGRAMAS*/
 .holograma1 {
     position: absolute;
-    left: -2406px;
-    top: calc(100vh - 605px);
+    left: -2331px;
+    top: calc(100vh - 545px);
     width: auto;
-    height: 499px;
+    height: 417px;
 }
 .holograma2 {
     position: absolute;
-    left: -1590px;
-    top: calc(100vh - 605px);
+    left: -1561px;
+    top: calc(100vh - 545px);
     width: auto;
-    height: 502px;
+    height: 417px;
 }
 .holograma3 {
     position: absolute;
-    left: -1169px;
-    top: calc(100vh - 605px);
+    left: -1119px;
+    top: calc(100vh - 545px);
     width: auto;
-    height: 499px;
-}
-
-/*METEORO*/
-.meteoro{
-    position: absolute;
-    left: -400px;
-    top: calc(100vh - 491px);
-    width: auto;
-    height: 452px;
-
+    height: 421px;
 }
 
 /*PALCO*/
