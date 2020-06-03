@@ -424,6 +424,16 @@ body {
     height: 421px;
 }
 
+/*METEORO*/
+.meteoro{
+    position: absolute;
+    left: -400px;
+    top: calc(100vh - 491px);
+    width: auto;
+    height: 452px;
+
+}
+
 /*PALCO*/
 .palco{
     position: absolute;
