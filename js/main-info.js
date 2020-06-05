@@ -215,8 +215,8 @@ function animeManu(classe, numerador, denominador){
   animeHolograma(target7,2,4,4.5);
   animeHolograma(target8, 6, 4,8);
   animeHolograma(target9, 9, 4,11);
-  animeMeteoro(target10,11,4);
-  setTimeout(function(){animePalco(target11,11,4);}, 2700);
-  setTimeout(function(){animeManu(target12,11,4);}, 2700);
+  animeMeteoro(target10,12,4);
+  setTimeout(function(){animePalco(target11,12,4);}, 2600);
+  setTimeout(function(){animeManu(target12,12,4);}, 2600);
 
 }
