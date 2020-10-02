@@ -3,7 +3,7 @@
  * Documento exclusivo para o Javascript da página de Login
  */
 
-var chaveMestra = "senha";
+var chaveMestra = "movimento";
 
 window.onload = function() {
   if (localStorage) {
